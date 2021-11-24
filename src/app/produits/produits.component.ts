@@ -23,8 +23,7 @@ export class ProduitsComponent implements OnInit {
       this.produits = prods;
       });
   }
-  supprimerProduit(p: Produit)
-{
+  supprimerProduit(p: Produit){
 let conf = confirm("Etes-vous sûr ?");
 if (conf)
 this.produitService.supprimerProduit(p.idProduit).subscribe(() => {
